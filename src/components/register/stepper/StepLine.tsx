@@ -1,7 +1,13 @@
-import React from 'react'
+import { cn } from "cn"
 
-export const StepLine = () => {
+export const StepLine = ({ filled }: { filled: boolean }) => {
   return (
-    <div className='flex flex-1 h-0.5 bg-[#34253F]'></div>
+    <div
+      className={cn(
+        "h-0.5 flex-1 transition-colors",
+        filled ? "bg-[#BE94FD]" : "bg-[#34253F]"
+      )}
+    />
   )
 }
+

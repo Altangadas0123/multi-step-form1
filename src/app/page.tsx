@@ -43,8 +43,8 @@ const Home = () => {
           </p>
         </section>
 
-        <div className="flex min-w-0 flex-col justify-center">
-          <GlassSurface width="100%" height="auto" contentClassName="h-auto flex-col items-stretch p-0">
+        <div className="flex min-w-0 flex-col justify-center lg:max-w-[498px]">
+          <GlassSurface width="100%" height="auto" contentClassName="h-auto flex-col items-stretch p-0 ">
             <RegisterForm />
           </GlassSurface>
         </div>

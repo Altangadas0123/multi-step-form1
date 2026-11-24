@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.glass-surface__sheen {
+  opacity: 0;
+}
