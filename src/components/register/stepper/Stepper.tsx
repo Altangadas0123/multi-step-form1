@@ -7,11 +7,11 @@ const steps = [
   { label: "Personal info", icon: User },
   { label: "Security", icon: Lock },
   { label: "Profile", icon: Camera },
-]
+] as const;
 
 export const Stepper = ({ step }: { step: number }) => {
   return (
-    <div className="flex w-full flex-col gap-2">
+    <div className="flex w-full flex-col gap-3">
       <div className="flex items-center">
         {steps.map((s, i) => {
           const n = i + 1
@@ -24,10 +24,10 @@ export const Stepper = ({ step }: { step: number }) => {
         })}
       </div>
 
-      <div className="flex justify-between text-sm text-[#FAF5FF]">
+      <div className="flex justify-between text-xs text-[#FAF5FF]">
         {steps.map((s) => (
           <span key={s.label} className="flex items-center gap-2">
-            <s.icon className="size-4" />
+            <s.icon className="size-3" />
             {s.label}
           </span>
         ))}
