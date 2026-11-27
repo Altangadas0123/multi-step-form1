@@ -1,7 +1,11 @@
-import React from 'react'
+import { BirthdayInput, PhoneNumberInput, ProfilePhoto } from '../inputs'
 
 export const StepProfile = () => {
   return (
-    <div>StepProfile</div>
+    <div>
+      <PhoneNumberInput/>
+      <BirthdayInput/>
+      <ProfilePhoto/>
+    </div>
   )
 }

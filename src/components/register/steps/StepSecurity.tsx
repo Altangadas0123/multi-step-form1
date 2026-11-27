@@ -1,7 +1,10 @@
-import React from 'react'
+import { PasswordInput } from '../inputs'
 
 export const StepSecurity = () => {
   return (
-    <div>StepSecurity</div>
+    <div>
+      <PasswordInput/>
+      <PasswordInput/>
+    </div>
   )
 }

@@ -1,7 +1,14 @@
-import React from 'react'
+import { EmailInput, NameInput } from '../inputs'
 
 export const StepPersonal = () => {
   return (
-    <div>StepPersonal</div>
+    <div>
+      <div>
+        <NameInput />
+        <NameInput />
+      </div>
+
+      <EmailInput />
+    </div>
   )
 }
